@@ -1,4 +1,6 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
 const app = express();
 const db = require('./db/db.js');
 const productRouter = require('./routes/productsRouter.js');
@@ -10,6 +12,7 @@ const productRouter = require('./routes/productsRouter.js');
 
 
 db();
+app.use(bodyParser.json());
 
 app.use('/api', productRouter);
 

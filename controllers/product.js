@@ -3,14 +3,21 @@ const ProductsModel = require("../models/products");
 
 
 const addProduct = async (req,res,next)=>{
-    const product = new ProductsModel(req.body);
+    const { name, price, category } = req.body;
     try {
-        await product.save();
-        res.send(product);
+        const product = new ProductsModel({
+            name: name,
+            price: price,
+            category: category,
+          });
+      
+          await product.save();
+          res.send[(product),"Product added successfully"];
     } catch (error) {
         return next(error);
     }
 }
+
 
 
 const updateProduct = async (req, res, next)=>{
@@ -18,7 +25,7 @@ const updateProduct = async (req, res, next)=>{
     const updateData = req.body;
     try {
         const updatedProduct = await ProductsModel.findByIdAndUpdate(productId, updateData,{new: true});
-        res.send(updatedProduct);
+        res.send[(updatedProduct),"Product updated successfully"];
     } catch (error) {
         return next(error);
     }
@@ -49,16 +56,16 @@ const getAllProducts = async (req, res, next) => {
     const id = req.params.id;
     try {
       await ProductsModel.deleteOne({ _id: id });
-      return res.json({ status: true });
+      return res.json({ status: true },"product deleted successfully");
     } catch (err) {
       return next(err);
     }
   };
 
-module.exports = [
+module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     deleteProduct,
     updateProduct,
-];
+};
