@@ -1,4 +1,33 @@
 # CRUD-operations-SOLERA
 
-# git clone
-# npm i 
+1- git clone from the repository 
+
+```bash
+    git clone git@github.com:olaayadggg/CRUD-operations-SOLERA.git
+```
+
+
+2- create .env file and add your connection string 
+
+
+
+3- to run the project you can use : 
+
+    - docker image 
+
+
+    or 
+
+
+    ```bash
+        npm install
+    ```
+
+    ```bash
+        node server.js
+    ```
+
+
+
+
+
