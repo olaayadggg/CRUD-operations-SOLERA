@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "e0bcbe9d-0670-4f64-bd96-02db36d38259",
+		"name": "SOLERA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26145758",
+		"_collection_link": "https://crimson-spaceship-922766.postman.co/workspace/Team-Workspace~6bded232-6710-4ffc-8863-d11f37521073/collection/26145758-e0bcbe9d-0670-4f64-bd96-02db36d38259?action=share&source=collection_link&creator=26145758"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getProductById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
