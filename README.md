@@ -14,11 +14,9 @@
     docker image 
 
     ```bash
-        docker build -t my-app .
+        docker-compose up --build 
     ```
-    ```bash
-        docker run -d -p 3000:3000 my-app
-    ```
+    
 
     or 
 
